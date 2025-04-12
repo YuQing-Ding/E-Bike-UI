@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用边距 -->
+    <dimen name="screen_margin">20dp</dimen>
+
+    <!-- 顶部栏 -->
+    <dimen name="speed_container_padding">10dp</dimen>
+
+    <!-- 应用容器 -->
+    <dimen name="apps_container_margin_top">40dp</dimen>
+
+    <!-- 应用项目尺寸 -->
+    <dimen name="app_item_margin">10dp</dimen>
+    <dimen name="app_item_padding">15dp</dimen>
+    <dimen name="app_icon_size">80dp</dimen>
+    <dimen name="app_name_margin_top">10dp</dimen>
+    <dimen name="app_background_corner_radius">20dp</dimen>
+
+    <!-- 字体大小 - 已增大 -->
+    <dimen name="time_text_size">48sp</dimen>
+    <dimen name="weather_text_size">15sp</dimen>
+    <dimen name="speed_text_size">56sp</dimen>
+    <dimen name="notice_text_size">25sp</dimen>
+    <dimen name="speed_unit_text_size">22sp</dimen>
+    <dimen name="app_name_text_size">24sp</dimen>
+</resources>

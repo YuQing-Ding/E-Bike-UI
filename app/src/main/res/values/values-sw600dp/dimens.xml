@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 为平板或大屏幕设备优化尺寸 -->
+    <dimen name="screen_margin">30dp</dimen>
+    
+    <dimen name="app_item_margin">15dp</dimen>
+    <dimen name="app_item_padding">20dp</dimen>
+    <dimen name="app_icon_size">120dp</dimen>
+    
+    <!-- 字体大小 - 也要相应增大 -->
+    <dimen name="time_text_size">64sp</dimen>
+    <dimen name="weather_text_size">15sp</dimen>
+    <dimen name="speed_text_size">72sp</dimen>
+    <dimen name="speed_unit_text_size">28sp</dimen>
+    <dimen name="app_name_text_size">32sp</dimen>
+</resources>
