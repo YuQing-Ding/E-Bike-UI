@@ -46,13 +46,14 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "WeatherDebug";
 
-    // 应用图标包名列表
+    // 应用图标包名列表 - 增加两个应用
     private static final String[] TARGET_PACKAGES = {
-            "com.autonavi.amapautolite",    // 高德地图
-            "com.sonyericsson.music",       // 索尼音乐
-            "com.yqdscott.dashcam",    // 高德地图
-            "com.android.settings"     // 系统设置
-    };
+            "com.autonavi.amapautolite",// 高德地图
+            "com.sonyericsson.music",// 索尼音乐
+            "com.sonyericsson.fmradio",//收音机
+            "com.yqdscott.dashcam",// 行车记录仪
+            "com.sonyericsson.video",// 图库
+            "com.android.settings"  };// 系统设置
 
     private TextView timeTextView;
     private TextView weatherTextView;
@@ -457,7 +458,8 @@ public class MainActivity extends AppCompatActivity {
 
         for (String packageName : TARGET_PACKAGES) {
             try {
-                if (appCount % 2 == 0) {
+                // 每行显示3个应用图标，保持对称
+                if (appCount % 3 == 0) {
                     currentRow = new TableRow(this);
                     tableLayout.addView(currentRow);
                 }
@@ -507,12 +509,18 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        if (currentRow != null && currentRow.getChildCount() == 1) {
-            View emptyView = new View(this);
-            TableRow.LayoutParams params = new TableRow.LayoutParams(
-                    0, TableRow.LayoutParams.WRAP_CONTENT, 1.0f);
-            emptyView.setLayoutParams(params);
-            currentRow.addView(emptyView);
+        // 确保最后一行对称，如果需要添加空白视图
+        if (currentRow != null) {
+            int emptyViewsNeeded = 3 - (appCount % 3);
+            if (emptyViewsNeeded < 3 && emptyViewsNeeded > 0) {
+                for (int i = 0; i < emptyViewsNeeded; i++) {
+                    View emptyView = new View(this);
+                    TableRow.LayoutParams params = new TableRow.LayoutParams(
+                            0, TableRow.LayoutParams.WRAP_CONTENT, 1.0f);
+                    emptyView.setLayoutParams(params);
+                    currentRow.addView(emptyView);
+                }
+            }
         }
 
         Log.d(TAG, "应用加载完成，共添加 " + appCount + " 个应用");

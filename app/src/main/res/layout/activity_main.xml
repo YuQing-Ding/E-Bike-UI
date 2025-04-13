@@ -45,13 +45,12 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="5dp"
                 android:gravity="center_vertical">
- <!-- 添加此属性以保持图片比例 -->
+
                 <ImageView
                     android:id="@+id/weatherIcon"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
                     android:layout_width="40dp"
-
                     android:layout_height="40dp"/>
 
                 <TextView
@@ -104,25 +103,25 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:text="记得取下我以免丢失！"
+            android:text="记得取下我,以免丢失！"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/timeWeatherContainer"
             app:layout_constraintEnd_toStartOf="@+id/speedContainer"
             app:layout_constraintStart_toEndOf="@+id/timeWeatherContainer" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- 应用图标容器 -->
+    <!-- 应用图标容器 - 修改高度以适应更多应用 -->
     <TableLayout
         android:id="@+id/appsContainer"
-        android:layout_width="704dp"
-        android:layout_height="388dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
         android:clickable="true"
         android:focusable="true"
-        android:stretchColumns="0,1"
+        android:stretchColumns="0,1,2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topBar"></TableLayout>
+        app:layout_constraintTop_toBottomOf="@id/topBar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
