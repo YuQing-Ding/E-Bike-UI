@@ -10,6 +10,7 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
     <style name="Theme.EBikeUI" parent="Base.Theme.EBikeUI" />
 </resources>

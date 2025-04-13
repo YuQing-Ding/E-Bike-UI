@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
     private static final String[] TARGET_PACKAGES = {
             "com.autonavi.amapautolite",    // 高德地图
             "com.sonyericsson.music",       // 索尼音乐
-            "com.autonavi.amapautolite",    // 高德地图
-            "com.android.settings"          // 系统设置
+            "com.yqdscott.dashcam",    // 高德地图
+            "com.android.settings"     // 系统设置
     };
 
     private TextView timeTextView;
