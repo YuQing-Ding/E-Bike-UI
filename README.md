@@ -12,9 +12,12 @@ E-Bike UI is a custom Android launcher designed specifically for electric bikes 
   - Current speed in km/h with location tracking
   - Local weather conditions and temperature for Shantou City
 - **App Shortcuts**: Quick access to commonly used applications
-  - Amap Auto (高德地图)
-  - Sony Walkman
-  - System Settings
+  - Amap Auto (高德地图车机版) - com.autonavi.amapautolite
+  - Sony Walkman - com.sonyericsson.music
+  - Sony Radio - com.sonyericsson.fmradio
+  - DashCam - com.yqdscott.dashcam
+  - Sony Video Player - com.sonyericsson.video
+  - System Settings - com.android.settings
 - **Easy Exit**: Triple-tap the speed display to return to the default launcher
 
 ## Technical Details
