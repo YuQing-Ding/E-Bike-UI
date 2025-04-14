@@ -46,7 +46,7 @@ E-Bike UI is a custom Android launcher designed specifically for electric bikes 
 ## Known Issues
 - UI is only available in Chinese
 - City is hardcoded to Shantou and requires code modification to change
-- App shortcuts (currently 4) must be modified through hardcoded values
+- App shortcuts (currently 6) must be modified through hardcoded values
 - UI layout is specifically optimized for Sony T2 Ultra displays and may not render correctly on other devices
 
 ## Customization
